@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+</head>
+<body>
+  <div style="
+    display: grid;
+    grid-template-columns: 100px 75px;">
+    <div style="background-color: lightblue;">100px</div>
+    <div style="background-color: lightpink;">75px</div>
+  </div>
+
+  <hr>
+
+  <div style="
+    display: grid;
+    grid-template-columns: 50px 1fr 75px;">
+    <div style="background-color: lightblue;">50px</div>
+    <div style="background-color: lightpink;">Remaining Space</div>
+    <div style="background-color: lightblue;">75px</div>
+  </div>
+
+  <hr>
+
+  <div style="
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 10px;
+    ">
+    <div style="background-color: lightpink;">col-1 </div>
+    <div style="background-color: lightpink;">col-2</div>
+    <div style="background-color: lightpink;">col-3</div>
+    <div style="background-color: lightpink;">col-4</div>
+    <div style="background-color: lightpink;">col-5</div>
+    <div style="background-color: lightpink;">col-6</div>
+    <div style="background-color: lightpink;">col-7</div>
+    <div style="background-color: lightpink;">col-8</div>
+  </div>
+
+  <hr>
+</body>
+</html>

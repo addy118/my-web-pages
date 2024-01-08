@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Div</title>
+  <style>
+    .red {
+      width: 50px;
+      height: 50px;
+      background-color: red;
+      display: inline-block;
+    }
+
+    .green {
+      width: 50px;
+      height: 50px;
+      background-color: rgb(14, 252, 14);
+      border-radius: 30px;
+      display: inline-block;
+    }
+
+    .service {
+      font-family: arial;
+      border-style: solid;
+      border-color: lightgray;
+      border-width: 2px;
+      width: 300px;
+      padding: 0px 0px 15px 15px;
+    }
+
+    .music {
+      font-family: arial;
+      border: none;
+      background-color: #444444;
+      color: white;
+      padding: 1px 12px 1px 12px;
+      width: 324px;
+    }
+
+    .install {
+      font-weight: bold;
+      font-size: 26px;
+      margin-bottom: 4px;
+    }
+
+    .add {
+      font-size: 14px;
+      color: lightgrey;
+    }
+
+    .tt {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 50px;
+      vertical-align: middle;
+    }
+
+    .what {
+      font-family: arial;
+      color: gray;
+      vertical-align: middle;
+      border: none;
+      font-size: 16px;
+      margin-left: 2px;
+    }
+
+    .tweet {
+      color: white;
+      padding: 7px 14px;
+      background-color: #4ea5ff;
+      border: none;
+      border-radius: 30px;
+      vertical-align: middle;
+      margin-left: 40px;
+    }
+
+    .twitter {
+      width: 373px;
+      padding: 10px 10px;
+      border-radius: 4px;
+      box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    .thumbnail {
+      font-family: arial;
+      width: 160px;
+      display: inline-block;
+      box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.2);
+      margin: 10px 5px 10px 5px;
+    }
+
+    .img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .name {
+      font-weight: bold;
+      margin: 6px 7px 2px 7px;
+    }
+
+    .friends {
+      font-size: 14px;
+      color: gray;
+      margin: 0px 7px 9px 7px;
+    }
+
+    .addf {
+      border: none;
+      background-color: #165be0;
+      color: white;
+      padding: 8px 18px;
+      border-radius: 4px;
+      margin-left: 8px;
+      margin-bottom: 10px;
+    }
+
+    .tweet, .addf {
+      cursor: pointer;
+    }
+    .tweet:hover, .addf:hover {
+      opacity: 0.9;
+    }
+    .tweet:active, .addf:active {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <div class="red"></div>
+  <div class="green"></div>
+
+  <hr>
+
+  <div class="service">
+    <p class="satisfy">Satisfied with our service?</p>
+    <button>Yes</button>
+    <button>No</button>
+  </div>
+
+  <hr>
+
+  <div class="music">
+    <p class="install">Install Youtube Music</p>
+    <p class="add">Add YouTube Music to your desktop for quick and easy access</p>
+  </div>
+
+  <hr><br>
+
+  <div class="twitter">
+    <img src="spidey.jpg" alt="pfp" class="tt">
+    <input class="what" type="text" placeholder="What's happening?">
+    <button class="tweet">Tweet</button>
+  </div>
+
+  <br><hr>
+
+  <div class="thumbnail">
+    <img src="spidey.jpeg" alt="spiderman" class="img">
+    <p class="name">Spiderman</p>
+    <p class="friends">2 mutual friends</p>
+    <button class="addf">Add Friend</button>
+  </div>
+
+  <div class="thumbnail">
+    <img src="batman.jpg" alt="batman" class="img">
+    <p class="name">Batman</p>
+    <p class="friends">3 mutual friends</p>
+    <button class="addf">Add Friend</button>
+  </div>
+
+  <div class="thumbnail">
+    <img src="deadpool.jpg" alt="deadpool" class="img">
+    <p class="name">Deadpool</p>
+    <p class="friends">4 mutual friends</p>
+    <button class="addf">Add Friend</button>
+  </div>
+
+</body>
+</html>

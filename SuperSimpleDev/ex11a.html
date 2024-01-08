@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Design by Grid</title>
+  <style>
+    p {
+      font-family: arial;
+      margin: 0px 0px;
+    }
+
+    .outer {
+      display: grid;
+      grid-template-columns: 180px 180px 180px;
+      column-gap: 15px;
+      row-gap: 20px;
+      margin: 18px 6px;
+    }
+
+    .person {
+      box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+    }
+
+    .two {
+      font-weight: bold;
+      padding: 4px 0px 6px 7px;
+    }
+
+    .three {
+      display: grid;
+      grid-template-columns: 30px 143px;
+      align-items: center;
+      padding-left: 7px;
+    }
+
+    .four {
+      padding: 4px 0px 10px 7px;
+    }
+
+    .post {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      object-position: center;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+
+    .pfp {
+      width: 30px;
+      height: 30px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 30px;
+    }
+
+    .friends {
+      font-size: 14px;
+      color: gray;
+      padding-left: 6px;
+    }
+
+    .addf {
+      border: none;
+      background-color: #165be0;
+      color: white;
+      padding: 8px 18px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .addf:hover {
+      opacity: 0.9;
+    }
+    .addf:active {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="outer">
+
+    <div class="person">
+      <div class="one">
+        <img src="spidey-post.jpeg" class="post">
+      </div>
+      <div class="two">
+        <p>Spiderman</p>
+      </div>
+      <div class="three">
+        <div>
+          <img src="spidey.jpg" class="pfp">
+        </div>
+        <div>
+          <p class="friends">8 mutual friends</p>
+        </div>
+      </div>
+      <div class="four">
+        <button class="addf">Add Friend</button>
+      </div>
+    </div>
+
+    <div class="person">
+      <div class="one">
+        <img src="batman-post.jpeg" class="post">
+      </div>
+      <div class="two">
+        <p>Batman</p>
+      </div>
+      <div class="three">
+        <div>
+          <img src="batman.jpg" class="pfp">
+        </div>
+        <div>
+          <p class="friends">6 mutual friends</p>
+        </div>
+      </div>
+      <div class="four">
+        <button class="addf">Add Friend</button>
+      </div>
+    </div>
+
+    <div class="person">
+      <div class="one">
+        <img src="deadpool-post.jpeg" class="post">
+      </div>
+      <div class="two">
+        <p>deadpool</p>
+      </div>
+      <div class="three">
+        <div>
+          <img src="deadpool.jpg" class="pfp">
+        </div>
+        <div>
+          <p class="friends">12 mutual friends</p>
+        </div>
+      </div>
+      <div class="four">
+        <button class="addf">Add Friend</button>
+      </div>
+    </div>
+    
+  </div>
+</body>
+</html>

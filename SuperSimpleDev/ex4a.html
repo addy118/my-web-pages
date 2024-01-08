@@ -1,0 +1,141 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buttons Transitions</title>
+  <style>
+    .back {
+      margin-right: 10px;
+      font-size: large;
+      padding: 13px 10px;
+      border-width: 2px;
+      border-style: solid;
+      border-color: gray;
+      border-radius: 4px;
+    }
+    .back:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+    .back:active {
+      opacity: 0.6;
+    }
+
+    .next {
+      margin-left: 10px;
+      font-size: large;
+      padding: 13px 10px;
+      border-width: 2px;
+      border-style: solid;
+      border-color: gray;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .next:hover {
+      opacity: 0.8;
+    }
+    .next:active {
+      opacity: 0.6;
+    }
+
+    u {
+      margin: 9px;
+      font-size: large;
+      transition: color 0.15s;
+      cursor: pointer;
+    }
+    u:hover {
+      color: #461a78; 
+    }
+    u:active {
+      opacity:0.7; 
+    }
+
+    .stretch {
+      color: white;
+      background-color: #019b01;
+      padding: 9px 21px;
+      border: none;
+      font-size: 25px;
+      transition: padding 1s;
+      cursor: pointer;
+    }
+    .stretch:hover {
+      padding: 22px 60px;
+    }
+
+    .shadow {
+      color: white;
+      background-color: #019b01;
+      padding: 9px 21px;
+      border: none;
+      font-size: 25px;
+      box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+      transition: shadow 0.15s;
+      cursor:pointer;
+    }
+    .shadow:active {
+      box-shadow: none;
+      margin: 4px 4px;
+    }
+
+    .one {
+      color: white;
+      background-color: #019b01;
+      padding: 9px 21px;
+      border: none;
+      font-size: 25px;
+      cursor:pointer;
+      transition: padding 0.15s, margin 0.15s;
+      margin: 0px 13px;
+    }
+    .one:hover {
+      margin: 0px 0px;
+      padding: 9px 34px;
+    }
+
+    .two {
+      color: white;
+      background-color: #019b01;
+      padding: 9px 21px;
+      border: none;
+      font-size: 25px;
+      cursor:pointer;
+      transition: padding 0.15s, margin 0.15s;
+      margin: 0px 13px;
+    }
+    .two:hover {
+      margin: 0px 0px;
+      padding: 9px 34px;
+    }
+
+    .three {
+      color: white;
+      background-color: #019b01;
+      padding: 9px 21px;
+      border: none;
+      font-size: 25px;
+      cursor:pointer;
+      transition: padding 0.15s, margin 0.15s;      
+      margin: 0px 13px;
+    }
+    .three:hover {
+      margin: 0px 0px;
+      padding: 9px 34px;
+    }
+  </style>
+</head>
+<body>
+  <button class="back">Back</button>
+  <u>1</u><u>2</u><u>3</u><u>4</u><u>5</u>
+  <button class="next">Next</button>
+  <br><br>
+  <button class="stretch">Stretch</button>
+  <br><br>
+  <button class="shadow">Shadow</button>
+  <br><br>
+  <button class="one">One</button>
+  <button class="two">Two</button>
+  <button class="three">Three</button>
+</body>
+</html>

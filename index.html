@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Pages by Aditya</title>
+  
+  <link href="https://fonts.cdnfonts.com/css/bestari" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: lightsalmon;
+      padding: 125px 20px;
+    }
+
+    .header {
+      position: fixed;
+      background-color: white;
+      color: rgb(255, 141, 96);
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+      font-family: Bestari;
+      font-size: 90px;
+      text-align: center;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      column-gap: 20px;
+      row-gap: 15px;
+    }
+
+    .file {
+      background-color: white;
+      display: flex;
+      padding: 10px 14px;
+      border-radius: 50px;
+      align-items: center;
+      transition: transform 0.5s;
+    }
+    .file:hover {
+      transform: scale(1.05, 1.05);
+      box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.15);
+    }
+
+    .site-icon {
+      width: 30px;
+    }
+
+    .folder-icon {
+      width: 26px;
+      margin: 0px 3px;
+    }
+
+    .file-details {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex: 1;
+    }
+
+    .name {
+      border: none;
+      background-color: transparent;
+      font-family: noto sans mono;
+      font-size: 18px;
+    }
+    .name:hover {
+      cursor: pointer;
+    }
+
+    .date {
+      color: rgb(188, 188, 188);
+      font-family: open sans;
+      font-size: 14px;
+      font-weight: 300;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    Websites by Aditya Kirti
+  </div>
+  <div class="grid">
+
+    <div class="file">
+      <img src="folder.png" class="folder-icon">
+      <div class="file-details">
+        <button class="name" onclick="location.href='super-simple-dev.html'">SuperSimpleDev</button>
+        <div class="date">01&centerdot;2024</div>
+      </div>
+    </div>
+
+    <div class="file">
+      <img src="site.png" class="site-icon">
+      <div class="file-details">
+        <button class="name" onclick="location.href='/Evento/index.html'">Evento</button>
+        <div class="date">09&centerdot;2023</div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

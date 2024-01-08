@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twitter Post Design</title>
+  <style>
+
+    div {
+      font-family: arial;
+      line-height: 22px;
+    }
+
+    .whole-container {
+      display: flex;
+      column-gap: 12px;
+      width: 420px;
+      margin: 20px 16px;
+    }
+
+    .pfp {
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .right-container {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2px;
+    }
+
+    .top {
+      display: flex;
+      column-gap: 6px;
+    }
+
+    .name {
+      font-weight: bold;
+    }
+
+    .username, .site {
+      color: gray;
+    }
+
+    .bottom {
+      padding: 10px 0px;
+    }
+
+    .card {
+      display: flex;
+      column-gap: 15px;
+      box-shadow: 0px 0px 2px 1px rgba(195, 195, 195, 0.7);
+      border-radius: 18px;
+    }
+
+    .gray {
+      width: 200px;
+      height: 110px;
+      border-bottom-left-radius: 18px;
+      border-top-left-radius: 18px;
+      background-color: rgb(195, 195, 195);
+    }
+
+    .details {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      row-gap: 4px;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <div class="whole-container">
+
+    <img src="spidey.jpg" class="pfp">
+    <div class="right-container">
+
+      <div class="top">
+        <div class="name">
+          supersimple.dev
+        </div>
+        <div class="username">
+          @SuperSimpleDev
+        </div>
+      </div>
+
+      <div class="mid">
+        What is backend web development? A complete overview. New video is up!
+      </div>
+
+      <div class="bottom">
+        <div class="card">
+
+          <div class="gray"></div>
+
+          <div class="details">
+            <div class="site">
+              youtube.com
+            </div>
+
+            <div class="title">
+              Backend web development - a complete overview (2021)
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

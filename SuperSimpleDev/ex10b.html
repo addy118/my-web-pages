@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thumbnail Design</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    p {
+      font-family: roboto, arial;
+      margin: 0px 0px;
+    }
+    .outer {
+      padding: 6px 6px;
+      width: 530px;
+    }
+
+    .one, .two {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .two {
+      width: 265px;
+      padding: 4px 4px;
+    }
+
+    .title {
+      font-weight: bold;
+      font-size: 17px;
+      line-height: 24px;
+      width: 215;
+      margin-bottom: 6px;
+    }
+
+    .creator, .stats {
+      color: gray;
+      font-size: 14px;
+      margin: 5px 0;
+    }
+
+    .thumb {
+      width: 215px;
+      height: 125px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="outer">
+
+    <div class="one">
+      <img src="stickyweb.jpeg" alt="spiderman" class="thumb">
+    </div>
+
+    <div class="two">
+      <p class="title">How to make your own sticky webs at home in 30 minutes!</p>
+      <p class="creator">Spiderman</p>
+      <p class="stats">40M views &centerdot; 1 month ago</p>
+    </div>
+
+  </div>
+
+  <div class="outer">
+
+    <div class="one">
+      <img src="10mil.jpg" alt="batman" class="thumb">
+    </div>
+
+    <div class="two">
+      <p class="title">How to get $10 million for free from my open bank account in 3 easy steps</p>
+      <p class="creator">Batman</p>
+      <p class="stats">300M views &centerdot; 2 months ago</p>
+    </div>
+
+  </div>
+
+  <div class="outer">
+
+    <div class="one">
+      <img src="deadpoolthumb.png" alt="deadpool" class="thumb">
+    </div>
+
+    <div class="two">
+      <p class="title">100 ways to die rated from 10</p>
+      <p class="creator">Deadpool</p>
+      <p class="stats">60M views &centerdot; 2 months ago</p>
+    </div>
+
+  </div>
+</body>
+</html>

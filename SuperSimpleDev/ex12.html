@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox</title>
+  <style>
+    body {
+      margin-bottom: 1000px;
+    }
+
+    .container1, .container2, .container3, .container4 {
+      display: flex;
+    }
+
+    .container3 {
+      justify-content: space-between;
+    }
+
+    .container4 {
+      height: 50px;
+      border-style: solid;
+      border-color: gray;
+      border-width: 1px;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .pink {
+      background-color: lightpink;
+    }
+
+    .blue {
+      background-color: lightblue;
+    }
+
+    p {
+      font-family: arial;
+      margin: 0;
+    }
+
+    .update {
+      display: flex;
+      flex-direction: column;
+      row-gap: 24px;
+      width: 575px;
+      border-style: solid;
+      border-color: lightgray;
+      border-radius: 8px;
+      padding: 12px 22px;
+    }
+
+    .first, .second, .third {
+      display: flex;
+      justify-content: space-between;
+      font-family: arial;
+      font-size: 32px;
+    }
+
+    .notif {
+      background-color: #426cea;
+      padding: 7px 21px;
+      border: none;
+      color: white;
+      border-radius: 50px;
+      font-size: 26px;
+      font-weight: bold;
+    }
+
+    .nav {
+      display: flex;
+      background-color: #7354ad;
+      justify-content: space-between;
+      height: 75px;
+      align-items: center;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .home {
+      font-weight: bold;
+      color: white;
+      font-size: 24px;
+    }
+
+    .search {
+      height: 40px;
+      border: none;
+      border-radius: 60px;
+      font-size: 18px;
+      padding-left: 30px;
+      width: 500px;  
+      margin: 0 30px;              
+    } 
+
+    .download {
+      border-style: solid;
+      border-color: white;
+      background-color: #7354ad;
+      color: white;
+      border-radius: 4px;
+      font-size: 24px;
+      padding: 10px 24px;
+      transition: background-color 0.15s, color 0.15s;
+    }
+    .download:hover {
+      background-color: white;
+      color: #7354ad;
+      cursor: pointer;
+    }
+    .download:active {
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container1">
+    <div class="blue" style="width: 200px;">200px</div>
+    <div class="pink" style="width: 75px;">75px</div>
+  </div>
+
+  <hr>
+
+  <div class="container2">
+    <div class="blue" style="width: 50px;">item 1</div>
+    <div class="pink" style="flex: 1;">item 2</div>
+    <div class="blue" style="width: 75px;">item 3</div>
+  </div>
+
+  <hr>
+
+  <div class="container3">
+    <div class="pink">item 1</div>
+    <div class="pink">item 2</div>
+    <div class="pink">item 3</div>
+    <div class="pink">item 4</div>
+  </div>
+
+  <hr>
+
+  <div class="container4">
+    <div class="pink">item 1</div>
+    <div class="pink">item 2</div>
+  </div>
+
+  <hr>
+
+  <div class="update">
+
+    <div class="first">
+      <div>
+        <p>Home</p>
+      </div>
+      <div class="noti">
+        <button class="notif">14</button>
+      </div>
+    </div>
+
+    <div class="second">
+      <div class="notifications">
+        <p>Notifications</p>
+      </div>
+      <div class="noti">
+        <button class="notif">3</button>
+      </div>
+    </div>
+
+    <div class="third">
+      <div class="messages">
+        <p>Messages</p>
+      </div>
+      <div class="noti">
+        <button class="notif">5</button>
+      </div>
+    </div>
+
+  </div>
+
+  <hr>
+
+  <div class="nav">
+    <div class="left">
+      <p class="home">Home</p>
+    </div>
+
+      <input type="text" class="search" placeholder="Search">
+
+      <button class="download">Download</button>
+  </div>
+</body>
+</html>

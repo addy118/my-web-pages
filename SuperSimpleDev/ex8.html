@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display</title>
+  <style>
+    .name, .email1 {
+      display: flex;
+      margin-top: 4px;
+    }
+
+    .thanks {
+      width: 200px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .google {
+      width: 180px;
+      display: block;
+      margin-left: 105px;
+      margin-bottom: 8px;
+    }
+
+    .gsearch {
+      padding: 9px 220px 9px 12px;
+      border: none;
+      box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
+    }
+
+    .fname, .lname {
+      padding: 14px 0 14px 18px;
+      font-size: 18px;
+      border-style: solid;
+      border-color: lightgray;
+      border-radius: 8px;
+    }
+
+    .email2 {
+      display: block;
+      margin-top: 12px;
+      padding: 14px 0px 14px 18px;
+      font-size: 18px;
+      border-style: solid;
+      border-color: lightgray;
+      border-radius: 8px;
+    }
+
+    #fname, #lname {
+      width: 148px;
+    } 
+
+    #email2 {
+      width: 323px;
+    }
+
+    .sign {
+      margin-top: 12px;
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+      background-color: #3975e8;
+      border: none;
+      border-radius: 8px;
+      padding: 16px 135px;
+      cursor: pointer;
+    }
+
+    .req {
+      font-family: arial;
+      font-size: 42px;
+      margin-bottom: 25px;
+    }
+
+    .pick, .dest {
+      display:flex;
+      border: none;
+      background-color: rgb(236, 236, 236);
+      font-size: 16px;
+      margin-top: 8px;
+      margin-bottom: 8px;
+      padding: 15px 200px 15px 20px;
+    }
+
+    .request {
+      border: none;
+      background-color: black;
+      color: white;
+      font-size: 16px;
+      padding: 15px 20px;
+      cursor: pointer;
+    }
+
+    .schedule {
+      border: none;
+      background-color: rgb(236, 236, 236);
+      margin-left: 10px;
+      font-size: 16px;
+      padding: 15px 20px;
+      cursor: pointer;
+    }
+
+    .yes, .no {
+      cursor: pointer;
+    }
+
+    .schedule:hover, .request:hover, .sign:hover, .yes:hover, .no:hover {
+      opacity: 0.9;
+    }
+
+    .schedule:active, .schedule:active, .sign:active, .yes:active, .no:active{
+      opacity: 0.8;
+    }
+    
+  </style>
+</head>
+<body>
+  <input type="text" class="name" placeholder="Name">
+  <input type="text" class="email1" placeholder="Email">
+  <hr><br>
+  <p class="thanks">Thanks for chatting with our customer support. Would you like to take our quick survey?</p>
+  <button class="yes">Yes</button>
+  <button class="no">No</button>
+  <br><br><hr><br>
+  <img src="google.png" alt="google" class="google">
+  <input type="text" class="gsearch" placeholder="Search Google or type a URL">
+  <br><br><hr><br>
+  <input type="text" id="fname" class="fname" placeholder="First Name">
+  <input type="text" id="lname" class="lname" placeholder="Last Name">
+  <input type="text" id="email2" class="email2" placeholder="Email">
+  <button class="sign">Sign Up</button>
+  <br><br><hr><br>
+  <p class="req">Request a ride now</p>
+  <input type="text" class="pick" placeholder="Enter pickup location">
+  <input type="text" class="dest" placeholder="Enter destination">
+  <button class="request">Request now</button>
+  <button class="schedule">Schedule for later</button>
+  <br><br><hr><br>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Images & Text Boxes</title>
+  <style>
+    .round {
+      width: 200px;
+      border-radius: 10px;
+    }
+
+    .sharp {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .circle {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 200px;
+    }
+
+    .search {
+      padding: 10px 0px 10px 10px;
+      border-color: lightgray;
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 6px;
+    }
+
+    .gsearch {
+      padding: 9px 220px 9px 12px;
+      border: none;
+      box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
+    }
+
+    .email {
+      font-family: arial;
+      color: gray;
+      font-size: 14px;
+      margin-bottom: 3px;
+    }
+
+    .linkedin {
+      padding: 5px 126px 5px 8px;
+      border-style: solid;
+      border-color: gray;
+      border-radius: 4px;
+      margin-bottom: 2px;
+    }
+
+    .warn {
+      font-family: arial;
+      font-size: 12px;
+      color: gray;
+      margin-bottom: 26px;
+    }
+
+    .join {
+      font-family: arial;
+      padding: 12px 105px 12px 105px;
+      background-color: #2f6dcd;
+      color: white;
+      border-radius: 30px;
+      border:none;
+      cursor: pointer;
+    }
+    .join:hover {
+      opacity: 0.9;
+    }
+    .join:active {
+      opacity: 0.8;
+    }
+
+    .tt {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 50px;
+      vertical-align: middle;
+    }
+
+    .what {
+      font-family: arial;
+      color: gray;
+      vertical-align: middle;
+      border: none;
+      font-size: 16px;
+      margin-left: 2px;
+    }
+
+    .tweet {
+      color: white;
+      padding: 7px 14px;
+      background-color: #4ea5ff;
+      border: none;
+      border-radius: 30px;
+      vertical-align: middle;
+      margin-left: 40px;
+      cursor: pointer;
+    }
+    .tweet:hover {
+      opacity: 0.9;
+    }
+    .tweet:active {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <img class="round" src="spidey.jpg">
+  <img class="sharp" src="spidey.jpg">
+  <img class="circle" src="spidey.jpg">
+
+  <br><hr><br>
+
+  <input type="text" class="search" placeholder="Search">
+
+  <br><br><hr><br>
+
+  <input type="text" class="gsearch" placeholder="Search Google or tye a URL">
+
+  <br><br><hr><br>
+
+  <p class="email">Email</p>
+  <input type="text" class="linkedin">
+  <p class="warn">By clicking Agree & Join, you agree to the Privacy Policy.</p>
+  <butt class="join">Agree & Join</butt>
+
+  <br><br><hr><br>
+
+  <img src="spidey.jpg" alt="pfp" class="tt">
+  <input class="what" type="text" placeholder="What's happening?">
+  <button class="tweet">Tweet</button>
+
+  <br><br><br>
+</body>
+</html>

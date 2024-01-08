@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Evento</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body style="background-color: lightgoldenrodyellow;">
+
+    <!-- navbar starts -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><span style="color:rgb(255, 68, 0)">E</span>vento</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-warning" type="submit">Search</button>
+                </form>
+                <form class="d-flex">
+                    <button type="button" class="btn btn-danger mx-2" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">
+                        Login
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login modal starts -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="loginModalLabel">Please Sign in</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <main class="form-signin w-100 m-auto">
+                        <form>
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Email address</label>
+                            </div>
+                            <br>
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="floatingPassword"
+                                    placeholder="Password">
+                                <label for="floatingPassword">Password</label>
+                            </div>
+
+                            <div class="form-check text-start py-1">
+                                <input class="form-check-input" type="checkbox" value="remember-me"
+                                    id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Remember me
+                                </label>
+                            </div>
+                            <br>
+                            <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
+                        </form>
+                    </main>
+                </div>
+                <div class="modal-footer">
+                    <p class="text-body-secondary">New member? register here</p>
+                    <button type="button" class="btn btn-primary rounded-pill btn-sm" data-bs-toggle="modal"
+                        data-bs-target="#signupModal">
+                        Sign Up
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- login modal ends -->
+
+    <!-- signup modal starts -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="signupModalLabel">Please register</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <main class="form-signin w-100 m-auto">
+                        <form>
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Email address</label>
+                            </div>
+                            <br>
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="floatingPassword"
+                                    placeholder="Password">
+                                <label for="floatingPassword">Create Password</label>
+                            </div>
+                            <br>
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="floatingPassword"
+                                    placeholder="Password">
+                                <label for="floatingPassword">Confirm Password</label>
+                            </div>
+
+                            <div class="form-check text-start py-1">
+                                <input class="form-check-input" type="checkbox" value="remember-me"
+                                    id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Remember me
+                                </label>
+                            </div>
+                            <br>
+                            <button class="btn btn-primary w-100 py-2" type="submit">Sign Up</button>
+                        </form>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- singup modal ends -->
+
+    <!-- navbar ends -->
+
+
+    <!-- homepage starts -->
+
+    <!--hero starts-->
+    <main>
+        <h1 class="visually-hidden">Heroes logins</h1>
+
+        <div class="container my-5">
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+                <div class="px-4 py-5 my-5 text-center">
+                    <h1 class="display-2 fw-bold lh-1 text-body-emphasis"><span style="color: orangered">E</span>vento
+                    </h1>
+                    <div class="col-lg-6 mx-auto">
+                        <p class="display-4 fw-bold lh-1 text-body-emphasis lead mb-4">Manage event space better than
+                            ever.</p>
+                        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="loginFormControlInput1"
+                                    placeholder="name@login.com">
+                            </div>
+                            <button type="button" class="btn btn-dark btn-sm px-3" data-bs-toggle="modal"
+                                data-bs-target="#signupModal">
+                                Register here
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--hero ends-->
+
+    <!-- featurettes start-->
+    <div class="container">
+        <hr>
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal" style="color: black">Make your weddings memorable with us</h2>
+                <p class="lead" style="color: black">We make all the birthday arrangements wishing a happy year ahead to our customers </p>
+            </div>
+            <div class="col-md-5">
+                <img src="https://source.unsplash.com/500x150/?couple, wedding"
+                    class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    <div class="container">
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal" style="color: black">For parties which will not bore for a minute</h2>
+                <p class="lead" style="color: black">We manage all the party arrangements</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img src="https://source.unsplash.com/500x150/?happy, birthday"
+                    class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    <div class="container">
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal" style="color: black">To jam the songs with hundreds of crazy fans</h2>
+                <p class="lead" style="color: black">We arrange all the things for concert.</p>
+            </div>
+            <div class="col-md-5">
+                <img src="https://source.unsplash.com/500x150/?concert, fans"
+                    class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+            </div>
+        </div>
+    </div>
+    <!--featurettes end-->
+
+    <!-- homepage ends -->
+
+    <!-- footer starts -->
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="home.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link px-2 text-body-secondary">Services</a>
+                </li>
+                <li class="nav-item"><a href="pricing.html" class="nav-link px-2 text-body-secondary">Pricing</a>
+                </li>
+                <li class="nav-item"><a href="about.html" class="nav-link px-2 text-body-secondary">About</a></li>
+            </ul>
+            <p class="text-center">© 2023 Company, Inc</p>
+        </footer>
+    </div>
+    <!-- footer ends -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>

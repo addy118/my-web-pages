@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SuperSimpleDev</title>
+  
+  <link href="https://fonts.cdnfonts.com/css/bestari" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: lightsalmon;
+      padding: 125px 20px;
+    }
+
+    .header {
+      position: fixed;
+      background-color: white;
+      color: rgb(255, 141, 96);
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+      font-family: Bestari;
+      font-size: 90px;
+      text-align: center;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 20px;
+      row-gap: 15px;
+    }
+
+    .file {
+      background-color: white;
+      display: flex;
+      padding: 10px 14px;
+      border-radius: 50px;
+      align-items: center;
+      transition: transform 0.5s;
+    }
+    .file:hover {
+      transform: scale(1.05, 1.05);
+      box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.15);
+    }
+
+    .site-icon {
+      width: 30px;
+    }
+
+    .folder-icon {
+      width: 26px;
+      margin: 0px 3px;
+    }
+
+    .file-details {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex: 1;
+    }
+
+    .name {
+      border: none;
+      background-color: transparent;
+      font-family: noto sans mono;
+      font-size: 18px;
+    }
+    .name:hover {
+      cursor: pointer;
+    }
+
+    .date {
+      color: rgb(188, 188, 188);
+      font-family: open sans;
+      font-size: 14px;
+      font-weight: 300;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    SuperSimpleDev
+  </div>
+  <div class="grid">
+
+    <div class="file">
+      <img src="site.png" class="site-icon">
+      <div class="file-details">
+        <button class="name" onclick="location.href='/SuperSimpleDev/ex1.html'">1. Buttons & Links</button>
+        <div class="date">01&centerdot;2024</div>
+      </div>
+    </div>
+
+    <div class="file">
+      <img src="site.png" class="site-icon">
+      <div class="file-details">
+        <button class="name" onclick="location.href='/SuperSimpleDev/ex2.html'">2. Buttons - Cursor</button>
+        <div class="date">01&centerdot;2024</div>
+      </div>
+    </div>
+
+    <div class="file">
+      <img src="site.png" class="site-icon">
+      <div class="file-details">
+        <button class="name" onclick="location.href='/SuperSimpleDev/ex3.html'">3. Buttons - Hover</button>
+        <div class="date">01&centerdot;2024</div>
+      </div>
+    </div>
+
+    <div class="file">
+      <img src="site.png" class="site-icon">
+      <div class="file-details">
+        <button class="name" onclick="location.href='/SuperSimpleDev/ex4.html'">4. Buttons - Active</button>
+        <div class="date">01&centerdot;2024</div>
+      </div>
+    </div>
+
+    <div class="file">
+      <img src="site.png" class="site-icon">
+      <div class="file-details">
+        <button class="name" onclick="location.href='/SuperSimpleDev/ex4a.html'">4.1. Buttons Transitions</button>
+        <div class="date">01&centerdot;2024</div>
+      </div>
+    </div>
+
+    <div class="file">
+      <img src="site.png" class="site-icon">
+      <div class="file-details">
+        <button class="name" onclick="location.href='/SuperSimpleDev/ex5.html'">5. Text Styles</button>
+        <div class="date">01&centerdot;2024</div>
+      </div>
+    </div>
+
+    <div class="file">
+      <img src="site.png" class="site-icon">
+      <div class="file-details">
+        <button class="name" onclick="location.href='/SuperSimpleDev/ex5a.html'">5.1. Text Styles & Buttons</button>
+        <div class="date">01&centerdot;2024</div>
+      </div>
+    </div>
+
+    <div class="file">
+      <img src="site.png" class="site-icon">
+      <div class="file-details">
+        <button class="name" onclick="location.href='/SuperSimpleDev/ex6.html'">6. HTML Structure</button>
+        <div class="date">01&centerdot;2024</div>
+      </div>
+    </div>
+
+    <div class="file">
+      <img src="site.png" class="site-icon">
+      <div class="file-details">
+        <button class="name" onclick="location.href='/SuperSimpleDev/ex7.html'">7. Images & Text Boxes</button>
+        <div class="date">01&centerdot;2024</div>
+      </div>
+    </div>
+
+    <div class="file">
+      <img src="site.png" class="site-icon">
+      <div class="file-details">
+        <button class="name" onclick="location.href='/SuperSimpleDev/ex8.html'">8. Display</button>
+        <div class="date">01&centerdot;2024</div>
+      </div>
+    </div>
+
+    <div class="file">
+      <img src="site.png" class="site-icon">
+      <div class="file-details">
+        <button class="name" onclick="location.href='/SuperSimpleDev/ex9.html'">9. Div</button>
+        <div class="date">01&centerdot;2024</div>
+      </div>
+    </div>
+
+    <div class="file">
+      <img src="site.png" class="site-icon">
+      <div class="file-details">
+        <button class="name" onclick="location.href='/SuperSimpleDev/ex10a.html'">10. Nested Layouts</button>
+        <div class="date">01&centerdot;2024</div>
+      </div>
+    </div>
+
+    <div class="file">
+      <img src="site.png" class="site-icon">
+      <div class="file-details">
+        <button class="name" onclick="location.href='/SuperSimpleDev/ex10b.html'">10.1. Thumbnail Design</button>
+        <div class="date">01&centerdot;2024</div>
+      </div>
+    </div>
+
+    <div class="file">
+      <img src="site.png" class="site-icon">
+      <div class="file-details">
+        <button class="name" onclick="location.href='/SuperSimpleDev/ex10c.html'">10.2. Profile Design</button>
+        <div class="date">01&centerdot;2024</div>
+      </div>
+    </div>
+
+    <div class="file">
+      <img src="site.png" class="site-icon">
+      <div class="file-details">
+        <button class="name" onclick="location.href='/SuperSimpleDev/ex11.html'">11. Grid</button>
+        <div class="date">01&centerdot;2024</div>
+      </div>
+    </div>
+
+    <div class="file">
+      <img src="site.png" class="site-icon">
+      <div class="file-details">
+        <button class="name" onclick="location.href='/SuperSimpleDev/ex11a.html'">11.1. Profile Design by Grid</button>
+        <div class="date">01&centerdot;2024</div>
+      </div>
+    </div>
+
+    <div class="file">
+      <img src="site.png" class="site-icon">
+      <div class="file-details">
+        <button class="name" onclick="location.href='/SuperSimpleDev/ex12.html'">12. Flexbox</button>
+        <div class="date">01&centerdot;2024</div>
+      </div>
+    </div>
+
+    <div class="file">
+      <img src="site.png" class="site-icon">
+      <div class="file-details">
+        <button class="name" onclick="location.href='/SuperSimpleDev/ex12a.html'">12.1. Mini-Profile Design</button>
+        <div class="date">01&centerdot;2024</div>
+      </div>
+    </div>
+
+    <div class="file">
+      <img src="site.png" class="site-icon">
+      <div class="file-details">
+        <button class="name" onclick="location.href='/SuperSimpleDev/ex13.html'">13. Nested Flexbox</button>
+        <div class="date">01&centerdot;2024</div>
+      </div>
+    </div>
+
+    <div class="file">
+      <img src="site.png" class="site-icon">
+      <div class="file-details">
+        <button class="name" onclick="location.href='/SuperSimpleDev/ex13a.html'">13.1. Mail Design</button>
+        <div class="date">01&centerdot;2024</div>
+      </div>
+    </div>
+
+    <div class="file">
+      <img src="site.png" class="site-icon">
+      <div class="file-details">
+        <button class="name" onclick="location.href='/SuperSimpleDev/ex13b.html'">13.2. Twitter Post Design</button>
+        <div class="date">01&centerdot;2024</div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
