@@ -5,101 +5,300 @@
   <meta name="viewport" content="width=, initial-scale=1.0">
   <title>SkillForge</title>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+                integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+                crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="skillforge.css">
-</head>
+</head> 
 <body>
   <div class="uni-container">
 
     <div class="nav">
-      <div class="brand">SkillForge<span class="dot">.</span></div>
+      <div class="brand">SkillForge<span class="dot-1">&nbsp; &#9724;</span></div>
       <div class="nav-sec-container">
-        <button class="nav-sec">Find passion</button>
-        <button class="nav-sec">Categories</button>
-        <button class="nav-sec">Skills</button>
-        <button class="nav-sec">Customer</button>
+        <a class="nav-sec" href="#passion">Find passion</a>
+        <a class="nav-sec" href="#categories">Categories</a>
+        <a class="nav-sec" href="#skills">Skills</a>
+        <a class="nav-sec" href="#customer">Customer</a>
       </div>
-      <button class="login" onclick="signup.html">Login</button>
+      <button class="login" onclick="location.href='signup.html'">Login</button>
     </div>
 
     <div class="sections-container">
-      <div class="passion-container">
-        <p class="passion-slogan">Watch. <br>Learn. <br>Grow.</p>
+      <div class="passion-container" id="passion">
+        <p class="passion-slogan">Watch<span class="dot-2">&#9724;</span> <br>Learn<span class="dot-2">&#9724;</span> <br>Grow<span class="dot-2">&#9724;</span></p>
         <div class="passion-searchbar-container">
           <div><input type="search" placeholder="Find your passion" class="passion-searchbar"></div>
           <div class="go-container"><p>Go</p></div>
         </div>
         <div class="gallery">
-          <div class="panel active">
-            <img class="pfp" src="image/first_pfp.webp">
-          </div>
+
           <div class="panel">
-            <img class="pfp" src="image/second_pfp.webp">
+              <h2>Writing</h2>
           </div>
+
           <div class="panel">
-            <img class="pfp" src="image/third_pfp.webp">
+              <h2>Bussiness</h2>
+          </div>
+
+          <div class="panel">
+              <h2>Speaking</h2>
+          </div>
+
+        </div>
+      </div>
+
+       <!--divya's section-->
+      
+      <div class="categories-container" id="categories">
+        <header>
+          <h1 style="text-align: center;">Unlimited access to 100+ instructors.</h1>
+        </header>
+    
+        <nav>
+            <ul class="category-nav">
+                <li class="category-list">
+                    <a href="index.html" class="active">All categories</a>
+                </li>
+                <li class="category-list"v>
+                    <a href="index.html">Entertainment</a>
+                </li>
+                <li class="category-list">
+                    <a href="index.html">Lifestyle</a>
+                </li>
+                <li class="category-list">
+                    <a href="index.html">Writing</a>
+                </li>
+                <li class="category-list">
+                    <a href="index.html">Business</a>
+                </li>
+                <li class="category-list">
+                    <a href="index.html">Food</a>
+                </li>
+            </ul>
+        </nav>
+      
+        <div class="category-column">
+          <div class="category-card-img">
+            <div class="zoom">
+            <img src="image/sales-marketing.webp" alt="sales-marketing" class="category-img" width="250" height="250">
+            </div>
+            <h2>Sales Marketing</h2>
+            <p>4 month</p>    
+          </div>
+
+          <div class="category-card-img">
+            <div class="zoom">
+            <img src="image/data-analytics.webp" alt="data-analytics" class="category-img" width="250" height="250">
+            </div>
+            <h2>Data Analytics</h2> 
+            <p>3 month</p>    
+          </div >
+
+          <div class="category-card-img">
+            <div class="zoom">
+            <img src="image/copywriting.webp" alt="copywriting" class="category-img" width="250" height="250">
+            </div>
+            <h2>Copywriting Pro</h2>
+            <p>2 month</p>   
+          </div>
+
+          <div class="category-card-img">
+            <div class="zoom">
+            <img src="image/design-art.webp" alt="design-art" class="category-img" width="250" height="250">
+            </div>
+            <h2>Design Art</h2> 
+            <p>4 month</p>  
           </div>
         </div>
+
       </div>
   
   
        <!--himanshu's section-->
   
-      <div class="skills-container"> 
-        <div class="skills-top"> 
-            <div class="skills-slogan"> 
-                <h2> 
-                    Get the skills you need for a job that is in demand. 
-                </h2> 
-            </div> 
+      <div class="skills-container" id="skills">  
+        <div class="skills-top">  
+            <div class="skills-slogan">  
+                <h2>  
+                    Get the skills you  
+                    need for a job that  
+                    is in demand.  
+                </h2>  
+            </div>  
   
-            <div class="slogan-para">The modern labor market dictates its own terms. Today, to be a competitive specialist requires more than professional skills. 
-            </div> 
-        </div> 
-        <div class="skills-bottom"> 
-            <div class="list-container"> 
-                <div class="list"> 
-                    <img src="icon/badge.svg" class="icon"> 
-                    <div> 
-                        <div class="items">Leadership</div> 
-                        <div>Fully committed to the success company</div> 
-                    </div> 
-                </div> 
-                <div class="list"> 
-                    <img src="icon/brain.svg" class="icon"> 
-                    <div> 
-                        <div class="items">Leadership</div> 
-                        <div>Fully committed to the success company</div> 
-                    </div> 
-                </div> 
-                <div class="list"> 
-                    <img src="icon/thunder.svg" class="icon"> 
-                    <div> 
-                        <div class="items">Flexibility</div> 
-                        <div>The ability to switch is an important skill</div> 
-                    </div> 
-                </div> 
-            </div> 
-            <div class="video"> 
-                <video src="video.mp4" controls loop></video> 
-            </div> 
-        </div> 
-        <div class="exp"> 
-            <div class="left"> 
-                <div class="no">10</div> 
-                <div>YEARS<br>EXPERIENCES</div> 
-            </div> 
-            <div class="right"> 
-                <div class="no">250</div> 
-                <div>TYPES OF<br>COURSES</div> 
-            </div> 
-        </div> 
+            <div class="slogan-para">The modern labor market dictates its own terms. Today, to be a competitive  
+                specialist  
+                requires more than professional skills.  
+            </div>  
+        </div>  
+  
+        <div class="skills-bottom">  
+            <div class="list-container">  
+  
+                <div class="list">  
+                    <img src="icon/badge.svg" class="icon">  
+                    <div>  
+                        <div class="items">Leadership</div>  
+                        <div>Fully committed to the success company</div>  
+                    </div>  
+                </div>  
+      
+                <div class="list">  
+                    <img src="icon/brain.svg" class="icon">  
+                    <div>  
+                        <div class="items">Responsibility</div>  
+                        <div>Employees will always be my top priority</div>  
+                    </div>  
+                </div>  
+      
+                <div class="list">  
+                    <img src="icon/thunder.svg" class="icon">  
+                    <div>  
+                        <div class="items">Flexibility</div>  
+                        <div>The ability to switch is an important skill</div>  
+                    </div>  
+                </div>  
+            </div>  
+      
+            <div class="video">  
+                <video src="video.mp4" controls loop autoplay width="850"></video>  
+            </div>  
+        </div>  
+  
+  
+        <div class="exp">  
+            <div class="left">  
+                <div class="no">10</div>  
+                <div>YEARS<br>EXPERIENCES</div>  
+            </div>  
+            <div class="right">  
+                <div class="no">250</div>  
+                <div>TYPES OF<br>COURSES</div>  
+            </div>  
+        </div>  
+    </div>   
       </div> 
-    </div>
 
 
+       <!--isha's section-->
 
-  </div> 
+      <div class="footer-container" id="customer">
+        <div class="container">
+            <h2> What our customers has to say </h2>
+            <p class="description"></p>
+        
+            <div class="reviewSection">
+    
+                <div class="reviewItem">
+                    <div class="top">
+                        <div class="clientImage">
+                            <img src="image/first_pfp.webp" alt="">
+                            <span>Ritika Sheoran</span>
+                        </div>
+                        <ul>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                        </ul>
+                    </div>
+                    <article>
+                        <p class="review">I really like the speakers of the course and qulaity of lectures.There ialways feedback </p>
+                        <p class="date">Jan 01, 2023</p>
+                    </article>
+                </div>
+    
+                <div class="reviewItem">
+                    <div class="top">
+                        <div class="clientImage">
+                            <img src="image/second_pfp.webp" alt="">
+                            <span>Rahul Gokhle</span></span>
+                        </div>
+                        <ul>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                        </ul>
+                    </div>
+                    <article>
+                        <p class="review">I learned a lot of new things i immediately apply knowledge in workplacfound myslef a new client.</p>
+                        <p class="date">Mar 24, 2023</p>
+                    </article>
+                </div>
+    
+                <div class="reviewItem">
+                    <div class="top">
+                        <div class="clientImage">
+                            <img src="image/third_pfp.webp" alt="">
+                            <span>Ananya Dixit</span>
+                        </div>
+                        <ul>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                        </ul>
+                    </div>
+                    <article>
+                        <p class="review">The explainations are clear,teachers are responsible and friendly and thhomework is the real practice.</p>
+                        <p class="date">Jul 18, 2023</p>
+                    </article>
+                </div>
+            </div>
+        </div>
 
-  <script src="skillforge.js"></script>
+        <div class="footer">
+          <div class="footer-row">
+  
+            <div class="footer-col">
+              <h4>Info</h4>
+              <ul class="links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Compressions</a></li>
+                <li><a href="#">Customers</a></li>
+                <li><a href="#">Service</a></li>
+              </ul>
+            </div>
+    
+            <div class="footer-col">
+              <h4>Explore</h4>
+              <ul class="links">
+                <li><a href="#">Find Passion</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Customers</a></li>
+                <li><a href="#">New Uploads</a></li>
+              </ul>
+            </div>
+    
+            <div class="footer-col">
+              <h4>Join our community</h4>
+              <p>
+                Subscribe to our SkillForge for happy studying and Exclusive offers.
+              </p>
+              <form action="#">
+                <input type="text" placeholder="Enter your  email" required>
+                <button type="submit">SUBSCRIBE</button>
+              </form>
+              <div class="icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-github"></i>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div> <!--sec-container-->
+  </div> <!--uni-container-->
+
 </body>
 </html>
