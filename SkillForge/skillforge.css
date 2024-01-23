@@ -396,6 +396,10 @@ li a:hover:not(.active) {
     justify-content: space-between; 
 }
 
+.video {
+  border-radius: 20px;
+}
+
 
 /* isha's section */
 
@@ -486,7 +490,7 @@ li a:hover:not(.active) {
 
 article p {
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 100;
   margin-bottom: 1rem;
   font-family: archia, poppins;
   color: #000000
@@ -590,10 +594,12 @@ article p {
 }
 
 .footer-col input::placeholder {
+  font-family: archia, poppins;
   color: #ccc;
 }
 
  .footer-col form button {
+  font-family: archia, poppins;
   background: #fca311;
   color: #e5e5e5;
   outline: none;
@@ -654,3 +660,4 @@ article p {
   }
 }
 */
+
