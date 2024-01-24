@@ -10,7 +10,7 @@ body {
   background-color: #eae2b7;
 }
 
-.uni-container {
+.uniContainer {
   margin: 50px 20px;
   padding: 0px 100px;
   border-radius: 50px;
@@ -22,7 +22,7 @@ body {
   color: #e5e5e5;
 }
 
-.sections-container {
+.sectionsContainer {
   display: flex;
   flex-direction: column;
   background-color: #000000;
@@ -57,12 +57,12 @@ a {
   color: #1e1e2f;
 }
 
-.nav-sec-container {
+.navSecContainer {
   display: flex;
   column-gap: 40px;
 }
 
-.nav-sec {
+.navSec {
   font-family: archia, poppins;
   font-size: 16px;
   border: none;
@@ -71,7 +71,7 @@ a {
   transition: 0.5s;
   color: #e5e5e5;
 }
-.nav-sec:hover {
+.navSec:hover {
   background-position: 40% 40%;
 }
 
@@ -91,20 +91,20 @@ a {
   background-position: 100% 100%;
 }
 
-.passion-container {
+.passionContainer {
   display: flex;
   justify-content: space-between;
   position: relative;
 }
 
-.passion-slogan {
+.passionSlogan {
   font-size: 85px;
   font-weight: 500;
   line-height: 80px;
   margin: 70px 0;
 }
 
-.passion-searchbar-container {
+.passionSearchbarContainer {
   position: absolute;
   z-index: 100;
   display: flex;
@@ -112,7 +112,7 @@ a {
   bottom: 80px;
   box-shadow: 0px 30px 60px 0px rgba(255, 255, 255, 0.08);
 }
-.passion-searchbar-container:hover {
+.passionSearchbarContainer:hover {
   box-shadow: 0px 30px 60px 0px rgba(255, 255, 255, 0.1);
 }
 
@@ -142,7 +142,7 @@ input[type=search]:focus {
   align-items: center;
 }
 
-.go-container {
+.goContainer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -155,7 +155,7 @@ input[type=search]:focus {
   transition: background 0.4s;
 }
 
-.go-container:hover {
+.goContainer:hover {
   background-position: 100% 100%;
 }
 
@@ -220,24 +220,24 @@ transform: rotate(-90deg) translate(-350px);
 
 /* divya's section */
 
-.categories-container {
+.categoriesContainer {
   display: flex;
   flex-direction: column;
 }
 
-.category-nav {
+.categoryNav {
   list-style: none;
   text-align: center;
   margin-top: 40px;
   cursor: pointer;
 }
 
-.category-list {
+.categoryList {
   display: inline;
   font-weight: 400;
 }
 
-.category-list a{
+.categoryList a{
   padding: 4px 16px;
   font-family: poppins;
   font-size: 16px;
@@ -247,7 +247,7 @@ transform: rotate(-90deg) translate(-350px);
   background-size: 100% 200%;
   transition: 0.5s;
 }
-.category-list:hover a{
+.categoryList:hover a{
   background-position: 10% 10%;
 }
 
@@ -260,16 +260,16 @@ transform: rotate(-90deg) translate(-350px);
 }
 */
 
-.category-img {
+.categoryImg {
   border: 0;
   border-radius: 20px;
 }
 
-.category-card-img {
+.categoryCardImg {
   margin: 0 24px;
 }
 
-.category-column {
+.categoryColumn {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-top: 40px;
@@ -281,12 +281,12 @@ header h1 {
   font-size: 40px;
 }
 
-.category-card-img h2 {
+.categoryCardImg h2 {
   font-weight: 500;
   cursor: pointer;
 }
 
-.category-list .active {
+.categoryList .active {
   font-weight: 500;
 }
 
@@ -296,11 +296,11 @@ li a:hover:not(.active) {
 }
 */
 
-.category-card-img h2:hover {
+.categoryCardImg h2:hover {
   color: #fca311;
 }
 
-#scroll-container {
+#scrollContainer {
   scroll-behavior: smooth;
   scroll-margin-block-end: baseline;
 }
@@ -317,33 +317,33 @@ li a:hover:not(.active) {
 
 /* himanshu's section */
  
-.skills-container{ 
+.skillsContainer{ 
     display: flex; 
     flex-direction: column; 
     position: relative; 
     row-gap: 30px; 
 } 
  
-.skills-top{ 
+.skillsTop{ 
     display: flex; 
     justify-content: space-between; 
 } 
  
-.skills-slogan{ 
+.skillsSlogan{ 
     font-size: 30px; 
     overflow: nowrap; 
     width: 450px; 
     line-height: 55px; 
 } 
  
-.slogan-para{ 
+.sloganPara{ 
     font-size: 20px; 
     overflow: nowrap; 
     width: 500px; 
     padding: 50px; 
 } 
  
-.list-container{ 
+.listContainer{ 
     font-size: 20px; 
     display: flex; 
     flex-direction: column; 
@@ -391,7 +391,7 @@ li a:hover:not(.active) {
     font-size: 45px; 
 } 
  
-.skills-bottom{ 
+.skillsBottom{ 
     display: flex; 
     justify-content: space-between; 
 }
@@ -537,7 +537,7 @@ article p {
   border-radius: 6px;
 }
 
-.footer .footer-row {
+.footer .footerRow {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -545,43 +545,43 @@ article p {
   padding: 60px;
 }
 
-.footer-row .footer-col h4 {
+.footerRow .footerCol h4 {
   color: #ffffff;
   font-size: 1.2rem;
   font-weight: 400;
   padding-left: 39px;
 }
 
-.footer-col .links {
+.footerCol .links {
   margin-top: 20px;
 }
 
-.footer-col .links li {
+.footerCol .links li {
   list-style: none;
   margin-bottom: 10px;
 }
 
-.footer-col .links li a {
+.footerCol .links li a {
   text-decoration: none;
   color: #e5e5e5;
 }
 
-.footer-col .links li a:hover {
+.footerCol .links li a:hover {
   color: #ffffff;
 }
 
-.footer-col p {
+.footerCol p {
   margin: 20px 0;
   color: #e5e5e5;
   max-width: 300px;
 }
 
-.footer-col form {
+.footerCol form {
   display: flex;
   gap: 5px;
 }
 
-.footer-col input {
+.footerCol input {
   height: 40px;
   border-radius: 6px;
   background: none;
@@ -593,12 +593,12 @@ article p {
   padding-left: 10px;
 }
 
-.footer-col input::placeholder {
+.footerCol input::placeholder {
   font-family: archia, poppins;
   color: #ccc;
 }
 
- .footer-col form button {
+ .footerCol form button {
   font-family: archia, poppins;
   background: #fca311;
   color: #e5e5e5;
@@ -611,23 +611,23 @@ article p {
   transition: 0.2s ease;
 }
 
-.footer-col form button:hover {
+.footerCol form button:hover {
   background: #cecccc;
 }
 
-.footer-col .icons {
+.footerCol .icons {
   display: flex;
   margin-top: 30px;
   gap: 30px;
   cursor: pointer;
 }
 
-.footer-col .icons i {
+.footerCol .icons i {
   padding-left: 31px;
   color: #e5e5e5;
 }
 
-.footer-col .icons i:hover  {
+.footerCol .icons i:hover  {
   color: #ffffff;
 }
 
@@ -647,17 +647,16 @@ article p {
     gap: 1rem;
   }
 
-  .footer-col form {
+  .footerCol form {
     display: block;
   }
 
-  .footer-col form :where(input, button) {
+  .footerCol form :where(input, button) {
     width: 100%;
   }
 
-  .footer-col form button {
+  .footerCol form button {
     margin: 10px 0 0 0;
   }
 }
 */
-
