@@ -2,309 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=, initial-scale=1.0">
-  <title>SkillForge</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Pages by Aditya Kirti</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&family=Open+Sans:wght@300;400&family=Young+Serif&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-                integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-                crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="skillforge.css">
-</head> 
+  <link rel="stylesheet" href="index.css">
+</head>
 <body>
-  <div class="uniContainer">
+  <div class="header">
+    <p class="head">Web Pages by Aditya Kirti</p>
+  </div>
+  <div class="grid">
 
-    <div class="nav">
-      <div class="brand">SkillForge<span class="dot-1">&nbsp; &#9724;</span></div>
-      <div class="navSecContainer">
-        <a class="navSec" href="#passion">Find passion</a>
-        <a class="navSec" href="#categories">Categories</a>
-        <a class="navSec" href="#skills">Skills</a>
-        <a class="navSec" href="#customer">Customer</a>
+    <div class="file">
+      <img src="folder.png" class="folder-icon">
+      <div class="file-details">
+        <button class="name" onclick="location.href='super-simple-dev.html'">SuperSimpleDev Exercises</button>
+        <div class="date">04&centerdot;01&centerdot;2024</div>
       </div>
-      
-      <button class="login" onclick="location.href='signup.html'">Login</button>
     </div>
 
-    <div class="sectionsContainer">
-      <div class="passionContainer" id="passion">
-        <p class="passionSlogan">Watch<span class="dot-2">&#9724;</span> <br>Learn<span class="dot-2">&#9724;</span> <br>Grow<span class="dot-2">&#9724;</span></p>
-        <div class="passionSearchbarContainer">
-          <div><input type="search" placeholder="Find your passion" class="passionSearchbar"></div>
-          <div class="goContainer"><p>Go</p></div>
-        </div>
-        <div class="gallery">
-
-          <div class="panel">
-              <h2>Writing</h2>
-          </div>
-
-          <div class="panel">
-              <h2>Bussiness</h2>
-          </div>
-
-          <div class="panel">
-              <h2>Speaking</h2>
-          </div>
-
-        </div>
+    <div class="file">
+      <img src="site.png" class="site-icon">
+      <div class="file-details">
+        <button class="name" onclick="location.href='/Evento/index.html'">Evento</button>
+        <div class="date">02&centerdot;09&centerdot;23</div>
       </div>
+    </div>
 
-       <!--divya's section-->
-      
-      <div class="categoriesContainer" id="categories">
-        <header>
-          <h1 style="text-align: center;">Unlimited access to 100+ instructors.</h1>
-        </header>
-    
-        <nav>
-            <ul class="categoryNav">
-                <li class="categoryList">
-                    <a href="index.html" class="active">All categories</a>
-                </li>
-                <li class="categoryList"v>
-                    <a href="index.html">Entertainment</a>
-                </li>
-                <li class="categoryList">
-                    <a href="index.html">Lifestyle</a>
-                </li>
-                <li class="categoryList">
-                    <a href="index.html">Writing</a>
-                </li>
-                <li class="categoryList">
-                    <a href="index.html">Business</a>
-                </li>
-                <li class="categoryList">
-                    <a href="index.html">Food</a>
-                </li>
-            </ul>
-        </nav>
-      
-        <div class="categoryColumn">
-          <div class="categoryCardImg">
-            <div class="zoom">
-            <img src="image/sales-marketing.webp" alt="sales-marketing" class="categoryImg" width="250" height="250">
-            </div>
-            <h2>Sales Marketing</h2>
-            <p>4 month</p>    
-          </div>
-
-          <div class="categoryCardImg">
-            <div class="zoom">
-            <img src="image/data-analytics.webp" alt="data-analytics" class="categoryImg" width="250" height="250">
-            </div>
-            <h2>Data Analytics</h2> 
-            <p>3 month</p>    
-          </div >
-
-          <div class="categoryCardImg">
-            <div class="zoom">
-            <img src="image/copywriting.webp" alt="copywriting" class="categoryImg" width="250" height="250">
-            </div>
-            <h2>Copywriting Pro</h2>
-            <p>2 month</p>   
-          </div>
-
-          <div class="categoryCardImg">
-            <div class="zoom">
-            <img src="image/design-art.webp" alt="design-art" class="categoryImg" width="250" height="250">
-            </div>
-            <h2>Design Art</h2> 
-            <p>4 month</p>  
-          </div>
-        </div>
-
+    <div class="file">
+      <img src="site.png" class="site-icon">
+      <div class="file-details">
+        <button class="name" onclick="location.href='/SkillForge/index.html'">SkillForge</button>
+        <div class="date">12&centerdot;01&centerdot;24</div>
       </div>
-  
-  
-       <!--himanshu's section-->
-  
-      <div class="skillsContainer" id="skills">  
-        <div class="skillsTop">  
-            <div class="skillsSlogan">  
-                <h2>  
-                    Get the skills you  
-                    need for a job that  
-                    is in demand.  
-                </h2>  
-            </div>  
-  
-            <div class="sloganPara">The modern labor market dictates its own terms. Today, to be a competitive  
-                specialist  
-                requires more than professional skills.  
-            </div>  
-        </div>  
-  
-        <div class="skillsBottom">  
-            <div class="listContainer">  
-  
-                <div class="list">  
-                    <img src="icon/badge.svg" class="icon">  
-                    <div>  
-                        <div class="items">Leadership</div>  
-                        <div>Fully committed to the success company</div>  
-                    </div>  
-                </div>  
-      
-                <div class="list">  
-                    <img src="icon/brain.svg" class="icon">  
-                    <div>  
-                        <div class="items">Responsibility</div>  
-                        <div>Employees will always be my top priority</div>  
-                    </div>  
-                </div>  
-      
-                <div class="list">  
-                    <img src="icon/thunder.svg" class="icon">  
-                    <div>  
-                        <div class="items">Flexibility</div>  
-                        <div>The ability to switch is an important skill</div>  
-                    </div>  
-                </div>  
-            </div>  
-      
-            <div class="video">  
-                <video src="demo.mkv" controls loop autoplay width="850"></video>  
-            </div>  
-        </div>  
-  
-  
-        <div class="exp">  
-            <div class="left">  
-                <div class="no">10</div>  
-                <div>YEARS<br>EXPERIENCES</div>  
-            </div>  
-            <div class="right">  
-                <div class="no">250</div>  
-                <div>TYPES OF<br>COURSES</div>  
-            </div>  
-        </div>  
-    </div> 
+    </div>
 
-
-       <!--isha's section-->
-
-      <div class="footerContainer" id="customer">
-        <div class="container">
-            <h2> What our customers has to say </h2>
-            <p class="description"></p>
-        
-            <div class="reviewSection">
-    
-                <div class="reviewItem">
-                    <div class="top">
-                        <div class="clientImage">
-                            <img src="image/first_pfp.webp" alt="">
-                            <span>Ritika Sheoran</span>
-                        </div>
-                        <ul>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-regular fa-star"></i></li>
-                            <li><i class="fa-regular fa-star"></i></li>
-                        </ul>
-                    </div>
-                    <article>
-                        <p class="review">I really like the speakers of the course and qulaity of lectures. There is always a feedback session.</p>
-                        <p class="date">Jan 01, 2023</p>
-                    </article>
-                </div>
-    
-                <div class="reviewItem">
-                    <div class="top">
-                        <div class="clientImage">
-                            <img src="image/second_pfp.webp" alt="">
-                            <span>Rahul Gokhle</span></span>
-                        </div>
-                        <ul>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-regular fa-star"></i></li>
-                        </ul>
-                    </div>
-                    <article>
-                        <p class="review">I learned a lot of new things. I immediately applied this knowledge in my workplace and found myslef a new client.</p>
-                        <p class="date">Mar 24, 2023</p>
-                    </article>
-                </div>
-    
-                <div class="reviewItem">
-                    <div class="top">
-                        <div class="clientImage">
-                            <img src="image/third_pfp.webp" alt="">
-                            <span>Ananya Dixit</span>
-                        </div>
-                        <ul>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-regular fa-star"></i></li>
-                            <li><i class="fa-regular fa-star"></i></li>
-                        </ul>
-                    </div>
-                    <article>
-                        <p class="review">The explainations are clear, teachers are responsible and friendly and the homework is the real practice.</p>
-                        <p class="date">Jul 18, 2023</p>
-                    </article>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer">
-          <div class="footerRow">
-  
-            <div class="footerCol">
-              <h4>Info</h4>
-              <ul class="links">
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Compressions</a></li>
-                <li><a href="#">Customers</a></li>
-                <li><a href="#">Service</a></li>
-              </ul>
-            </div>
-    
-            <div class="footerCol">
-              <h4>Explore</h4>
-              <ul class="links">
-                <li><a href="#">Find Passion</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Categories</a></li>
-                <li><a href="#">Customers</a></li>
-                <li><a href="#">New Uploads</a></li>
-              </ul>
-            </div>
-    
-            <div class="footerCol">
-              <h4>Join our community</h4>
-              <p>
-                Subscribe to our SkillForge for happy studying and Exclusive offers.
-              </p>
-              <form action="#">
-                <input type="text" placeholder="Enter your  email" required>
-                <button type="submit">SUBSCRIBE</button>
-              </form>
-              <div class="icons">
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-github"></i>
-              </div>
-            </div>
-  
-          </div>
-        </div>
-      </div>
-
-
- 
-    </div> <!--sec-container-->
-  </div> <!--uni-container-->
-
-  
-
-  <script src="skillforge.js"></script>
+  </div>
 </body>
 </html>
