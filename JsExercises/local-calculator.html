@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      font-family: Roboto, sans-serif;
+      background: rgb(201,33,11);
+      background: radial-gradient(circle, rgba(201,33,11,1) 0%, rgba(207,102,6,1) 100%);
+    }
+    
+    .calculator {
+      background-color: #090909;
+      padding: 20px 20px;
+      display: inline-block;
+      border-radius: 35px;
+    }
+    
+    .js-input-bar {
+      padding: 0 14px;
+      height: 55px;
+      border: 2px solid white;
+      margin: 0 0 15px 0;
+      border-radius: 20px;
+      font-size: 28px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+    }
+    
+    .row {
+      display: grid;
+      grid-template-columns: 60px 60px 60px 60px;
+      column-gap: 5px;
+      margin: 5px 0;
+    }
+    
+    button {
+      border: none;
+      font-size: 28px;
+      color: #fff;
+      height: 60px;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+    
+    .operand {
+      background-color: #333;
+    }
+    
+    .operator {
+      background-color: #fea00a;
+    }
+    
+    .clear {
+      background-color: #fea00a;
+      margin: 10px 0 4px 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+<div class="calculator">
+  <div class="js-input-bar"></div>
+  <div class="row">
+    <button class="operand" onclick="updateCalculation(1)">1</button>
+    <button class="operand" onclick="updateCalculation(2);">2</button>
+    <button class="operand" onclick="updateCalculation(3)">3</button>
+    <button class="operator" onclick="updateCalculation(' + ');">+</button>
+  </div>
+  
+  <div class="row">
+    <button class="operand" onclick="updateCalculation(4)">4</button>
+    <button class="operand" onclick="updateCalculation(5)">5</button>
+    <button class="operand" onclick="updateCalculation(6)">6</button>
+    <button class="operator" onclick="updateCalculation(' - ')">-</button>
+  </div>
+  
+  <div class="row">
+    <button class="operand" onclick="updateCalculation(7)">7</button>
+    <button class="operand" onclick="updateCalculation(8)">8</button>
+    <button class="operand" onclick="updateCalculation(9)">9</button>
+    <button class="operator" onclick="updateCalculation(' * ')">*</button>
+  </div>
+  
+  <div class="row">
+    <button class="operand" onclick="updateCalculation(0)">0</button>
+    <button class="operand" onclick="updateCalculation('.')">.</button>
+    <button class="operand" onclick="evaluateCalculation()">=</button>
+    <button class="operator" onclick="updateCalculation(' / ')">/</button>
+  </div>
+  
+  <div>
+    <button class="clear" onclick="output.innerHTML=''; calculation=''">Clear</button>
+  </div>
+</div>
+
+<script>
+  let output = document.querySelector('.js-input-bar')
+  let calculation =  '' || localStorage.getItem('updatedCalc');
+  function updateCalculation(operand) {
+    calculation += operand
+    localStorage.setItem('updatedCalc', JSON.stringify(calculation))
+    // console.log(calculation)
+    output.innerHTML = calculation
+  }
+  function evaluateCalculation() {
+    calculation = eval(calculation)
+    localStorage.setItem('updatedCalc', JSON.stringify(calculation))
+    output.innerHTML = calculation
+  }
+</script>
+</body>
+</html>
